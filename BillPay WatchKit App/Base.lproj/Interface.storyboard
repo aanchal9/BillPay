@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--BillPay-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="BillPay" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="lwT-d6-X33">
+                            <items>
+                                <tableRow identifier="MainRowType" id="NHe-Gz-ehY" customClass="MainRowType">
+                                    <group key="rootItem" width="1" height="47" alignment="left" layout="vertical" id="WkZ-Zh-1zK">
+                                        <items>
+                                            <label width="1" height="0.70000000000000007" alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="RDT-Pj-lYr">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="RDT-Pj-lYr" id="OmZ-d2-a2j"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="mainTable" destination="lwT-d6-X33" id="but-Dq-PzC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="193" y="399"/>
+        </scene>
+        <!--Pay All Bills-->
+        <scene sceneID="WjO-ob-L19">
+            <objects>
+                <controller identifier="PayAllBillsInterfaceController" title="Pay All Bills" id="8LN-lg-EXX" customClass="PayAllBillsInterfaceController">
+                    <items>
+                        <label width="136" height="30" alignment="center" verticalAlignment="center" text="Total Amount" textAlignment="center" numberOfLines="0" id="TkX-sU-8bI"/>
+                        <label width="136" height="23" alignment="center" verticalAlignment="center" textAlignment="center" id="cMO-Ku-Ldz"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="UTc-uf-5Gr">
+                            <items>
+                                <button width="0.5" alignment="left" title="Ok" id="j3o-HH-jFZ">
+                                    <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="yesButton" destination="8LN-lg-EXX" id="Vbd-7v-KAL"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="left" title="Cancel" id="qHp-hK-2B9">
+                                    <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="noButton" destination="8LN-lg-EXX" id="BQo-gl-UvZ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Payment Confirmation" textAlignment="center" numberOfLines="0" id="9ME-hY-CXq">
+                            <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="cumulativeAmountLabel" destination="cMO-Ku-Ldz" id="FjK-9d-NjL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="193" y="174"/>
+        </scene>
+        <!--My Account-->
+        <scene sceneID="HSu-LO-A3d">
+            <objects>
+                <controller identifier="AccountSummaryController" title="My Account" id="Pya-DS-A9v" customClass="AccountSummaryController">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="bug-eF-JFu">
+                            <items>
+                                <label width="1" alignment="center" textAlignment="center" id="Wie-tg-Mg7">
+                                    <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <label width="1" alignment="center" textAlignment="center" numberOfLines="0" id="qkV-uI-Nhf">
+                                    <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label width="1" alignment="center" textAlignment="center" id="L7g-uv-R9H">
+                                    <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <label width="1" alignment="center" textAlignment="center" id="D2y-Lj-Vk4">
+                                    <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="accountBalance" destination="D2y-Lj-Vk4" id="sWR-6Y-d6g"/>
+                        <outlet property="accountBranch" destination="L7g-uv-R9H" id="jZS-ib-dCZ"/>
+                        <outlet property="accountNumber" destination="qkV-uI-Nhf" id="bG8-wL-2Cr"/>
+                        <outlet property="accountType" destination="Wie-tg-Mg7" id="SAZ-Eq-EMA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="431" y="175"/>
+        </scene>
+        <!--Pay Bill-->
+        <scene sceneID="j9o-4n-tNL">
+            <objects>
+                <controller identifier="PaymentConfirmController" title="Pay Bill" id="cEl-rk-L0c" customClass="PaymentConfirmController">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="V8E-8U-7OT">
+                            <items>
+                                <label width="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="k2M-eN-XId">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="rod-sc-jGP">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Payment Confirmation" textAlignment="center" numberOfLines="0" id="VvY-N3-Ylx">
+                            <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                        </label>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="vnr-jR-FbO">
+                            <items>
+                                <button width="0.50000000000000011" alignment="left" verticalAlignment="bottom" title="Ok" id="UvE-J4-xgQ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="yesButton" destination="cEl-rk-L0c" id="Xrc-Rk-4no"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="right" verticalAlignment="bottom" title="Cancel" id="K53-5I-4nv">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="noButton" destination="cEl-rk-L0c" id="Y0A-rQ-ICb"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="amountLabel" destination="rod-sc-jGP" id="FY1-Uo-2hu"/>
+                        <outlet property="confirmLabel" destination="k2M-eN-XId" id="dlB-A3-SPL"/>
+                        <outlet property="no" destination="K53-5I-4nv" id="cFx-3V-o4C"/>
+                        <outlet property="yes" destination="UvE-J4-xgQ" id="L86-In-MpE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="607" y="174"/>
+        </scene>
+        <!--Done-->
+        <scene sceneID="LZA-7k-6XP">
+            <objects>
+                <controller identifier="PaymentSuccessInterfaceController" title="Done" id="6nN-ud-Ca8" customClass="PaymentSuccessInterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Your payment completed successfully." textAlignment="center" numberOfLines="0" id="KRX-kw-9iS">
+                            <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="607" y="399"/>
+        </scene>
+        <!--Bills-->
+        <scene sceneID="auD-4Z-avF">
+            <objects>
+                <controller identifier="PayBillsController" title="Bills" id="hgZ-IJ-4x0" customClass="PayBillsController">
+                    <items>
+                        <table alignment="left" id="Kda-0F-JI6">
+                            <items>
+                                <tableRow identifier="PayBillsRowType" id="nZa-A7-GmQ" customClass="PayBillsRowType">
+                                    <group key="rootItem" width="1" height="63.5" alignment="left" layout="vertical" id="ifu-bs-6Am">
+                                        <items>
+                                            <group width="136" alignment="left" id="Zbl-H5-kSa">
+                                                <items>
+                                                    <imageView width="35" height="35" alignment="left" verticalAlignment="center" id="we4-jc-S0r"/>
+                                                    <group width="1" alignment="left" layout="vertical" id="An1-gs-Mg1">
+                                                        <items>
+                                                            <label width="90" height="24" alignment="left" textAlignment="center" numberOfLines="0" id="zIv-pN-vKP">
+                                                                <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                                            </label>
+                                                            <label width="90" height="24" alignment="left" textAlignment="center" id="BP2-su-ZSY">
+                                                                <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <separator alignment="left" id="EPf-Pw-7Rc">
+                                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </separator>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="companyImage" destination="we4-jc-S0r" id="4gc-H8-RDs"/>
+                                        <outlet property="label1" destination="zIv-pN-vKP" id="zZj-op-ahT"/>
+                                        <outlet property="label2" destination="BP2-su-ZSY" id="MpU-Pc-H40"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" verticalAlignment="center" text="No bills to Pay" id="HHg-Bn-JMA">
+                            <color key="textColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Pay Now" id="jXe-VU-6Kz">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="payBills" destination="hgZ-IJ-4x0" id="Ib6-mW-XDC"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="noBillsLabel" destination="HHg-Bn-JMA" id="boM-5A-Ab9"/>
+                        <outlet property="payBillsTable" destination="Kda-0F-JI6" id="SRg-4x-E5L"/>
+                        <outlet property="payNowButton" destination="jXe-VU-6Kz" id="gMb-Nw-tTE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="431" y="399"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController animationDuration="5" id="YCC-NB-fut">
+                    <items>
+                        <label width="136" alignment="left" text="Alert Label" textAlignment="left" numberOfLines="0" id="IdU-wH-bcW">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="198" y="644"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="PGx-kn-Sze">
+            <objects>
+                <glanceController id="PUG-Eh-DRY" customClass="GlanceInterfaceController">
+                    <items>
+                        <group alignment="left" id="XkR-MG-Rar">
+                            <items>
+                                <label width="136" height="37" alignment="left" text="BillPay" id="sq0-mt-OME">
+                                    <color key="textColor" red="0.94442471589999999" green="0.42998961769999999" blue="0.26688212880000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="osp-DI-23q">
+                            <items>
+                                <label width="131" height="37" alignment="center" textAlignment="center" numberOfLines="0" id="wXL-HQ-qwH">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label height="30" alignment="center" text="Available Balance" textAlignment="center" numberOfLines="0" id="tRR-5B-J50">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                                <label width="109" alignment="center" textAlignment="center" id="ogW-y7-VRl">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="accountTypeLabel" destination="wXL-HQ-qwH" id="sfP-So-TQc"/>
+                        <outlet property="infoLabel" destination="ogW-y7-VRl" id="ZHh-ge-BAw"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="198" y="897"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController">
+                    <items>
+                        <label width="1" alignment="left" textAlignment="left" id="z73-YA-Tho">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                        </label>
+                        <label width="1" alignment="left" textAlignment="left" numberOfLines="0" id="OSn-7d-DGj">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="OSn-7d-DGj" id="hfe-DH-5fO"/>
+                        <outlet property="titleLabel" destination="z73-YA-Tho" id="t0h-lA-FJP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="431" y="646"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.49214754440000003" blue="0.3585050937" alpha="1" colorSpace="calibratedRGB"/>
+</document>

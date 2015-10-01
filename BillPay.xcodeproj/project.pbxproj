@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8710AE631AE79C8600756B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710AE621AE79C8600756B67 /* main.m */; };
+		8710AE661AE79C8600756B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710AE651AE79C8600756B67 /* AppDelegate.m */; };
+		8710AE691AE79C8600756B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710AE681AE79C8600756B67 /* ViewController.m */; };
+		8710AE6C1AE79C8600756B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8710AE6A1AE79C8600756B67 /* Main.storyboard */; };
+		8710AE6E1AE79C8600756B67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8710AE6D1AE79C8600756B67 /* Images.xcassets */; };
+		8710AE711AE79C8600756B67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8710AE6F1AE79C8600756B67 /* LaunchScreen.xib */; };
+		8710AE7D1AE79C8600756B67 /* BillPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710AE7C1AE79C8600756B67 /* BillPayTests.m */; };
+		8710AE941AE7A16300756B67 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710AE931AE7A16300756B67 /* InterfaceController.m */; };
+		8710AE971AE7A16300756B67 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8710AE961AE7A16300756B67 /* NotificationController.m */; };
+		8710AE991AE7A16300756B67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8710AE981AE7A16300756B67 /* Images.xcassets */; };
+		8710AE9D1AE7A16300756B67 /* BillPay WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 8710AE9C1AE7A16300756B67 /* BillPay WatchKit App.app */; };
+		8710AEA51AE7A16300756B67 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8710AEA31AE7A16300756B67 /* Interface.storyboard */; };
+		8710AEA71AE7A16300756B67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8710AEA61AE7A16300756B67 /* Images.xcassets */; };
+		8710AEAA1AE7A16300756B67 /* BillPay WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8710AE8D1AE7A16300756B67 /* BillPay WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		873139741B03474100BC9E1A /* AccountSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873139731B03474100BC9E1A /* AccountSummaryViewController.m */; };
+		873139771B034CF200BC9E1A /* AccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873139761B034CF200BC9E1A /* AccountTableViewCell.m */; };
+		8731397A1B034EC100BC9E1A /* AccountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 873139791B034EC100BC9E1A /* AccountItem.m */; };
+		8731397B1B034EC100BC9E1A /* AccountItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 873139791B034EC100BC9E1A /* AccountItem.m */; };
+		8731397E1B034ED600BC9E1A /* ServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731397D1B034ED600BC9E1A /* ServiceItem.m */; };
+		8731398A1B0355C600BC9E1A /* TransactionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 873139891B0355C600BC9E1A /* TransactionItem.m */; };
+		8731398B1B0355C600BC9E1A /* TransactionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 873139891B0355C600BC9E1A /* TransactionItem.m */; };
+		8731398E1B0362D100BC9E1A /* PayBillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731398D1B0362D100BC9E1A /* PayBillsViewController.m */; };
+		873139921B0363F800BC9E1A /* BillItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873139911B0363F800BC9E1A /* BillItemTableViewCell.m */; };
+		873139931B0363F800BC9E1A /* BillItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 873139911B0363F800BC9E1A /* BillItemTableViewCell.m */; };
+		873139981B03683600BC9E1A /* airtel.png in Resources */ = {isa = PBXBuildFile; fileRef = 873139941B03683600BC9E1A /* airtel.png */; };
+		8731399A1B03683600BC9E1A /* American_Express.png in Resources */ = {isa = PBXBuildFile; fileRef = 873139951B03683600BC9E1A /* American_Express.png */; };
+		8731399C1B03683600BC9E1A /* Indiawater.png in Resources */ = {isa = PBXBuildFile; fileRef = 873139961B03683600BC9E1A /* Indiawater.png */; };
+		8731399E1B03683600BC9E1A /* msedcl.png in Resources */ = {isa = PBXBuildFile; fileRef = 873139971B03683600BC9E1A /* msedcl.png */; };
+		8735F6CE1B0DF85000539790 /* TransactionHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8735F6CB1B0DF85000539790 /* TransactionHistoryTableViewController.m */; };
+		8735F6CF1B0DF85000539790 /* TransactionItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8735F6CD1B0DF85000539790 /* TransactionItemTableViewCell.m */; };
+		8735F6D41B0DF86900539790 /* LowBalanceAlertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8735F6D11B0DF86900539790 /* LowBalanceAlertTableViewController.m */; };
+		8735F6D81B0DF8D400539790 /* ItemRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8735F6D71B0DF8D400539790 /* ItemRowType.m */; };
+		8735F6DB1B0DFD3800539790 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8735F6DA1B0DFD3800539790 /* SettingsTableViewController.m */; };
+		87401B0B1AF7A13C00DEADBE /* PayAllBillsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87401B0A1AF7A13C00DEADBE /* PayAllBillsInterfaceController.m */; };
+		8742F2261AE925E7003687D3 /* MainRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8742F2251AE925E7003687D3 /* MainRowType.m */; };
+		874D9D311AED172100A9131A /* AccountSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874D9D301AED172100A9131A /* AccountSummaryController.m */; };
+		874D9D341AED257D00A9131A /* PayBillsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874D9D331AED257D00A9131A /* PayBillsController.m */; };
+		874D9D371AED274500A9131A /* PayBillsRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = 874D9D361AED274500A9131A /* PayBillsRowType.m */; };
+		874D9D3A1AED49B500A9131A /* PaymentConfirmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874D9D391AED49B500A9131A /* PaymentConfirmController.m */; };
+		8791F1221B0F1F1200896D6D /* DebitAndCreditAlertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8791F1211B0F1F1200896D6D /* DebitAndCreditAlertTableViewController.m */; };
+		8791F1251B0F2CA200896D6D /* WeeklyAlertsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8791F1241B0F2CA200896D6D /* WeeklyAlertsTableViewController.m */; };
+		87A623161AF7DBFB00083148 /* GlanceInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A623151AF7DBFB00083148 /* GlanceInterfaceController.m */; };
+		87B5CCA51B15C7140050E207 /* ServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731397D1B034ED600BC9E1A /* ServiceItem.m */; };
+		87B5CCB51B15DFA10050E207 /* airtel.png in Resources */ = {isa = PBXBuildFile; fileRef = 873139941B03683600BC9E1A /* airtel.png */; };
+		87B5CCB61B15DFA90050E207 /* American_Express.png in Resources */ = {isa = PBXBuildFile; fileRef = 873139951B03683600BC9E1A /* American_Express.png */; };
+		87B5CCB71B15DFAC0050E207 /* Indiawater.png in Resources */ = {isa = PBXBuildFile; fileRef = 873139961B03683600BC9E1A /* Indiawater.png */; };
+		87B5CCB81B15DFB00050E207 /* msedcl.png in Resources */ = {isa = PBXBuildFile; fileRef = 873139971B03683600BC9E1A /* msedcl.png */; };
+		87DAE58D1AEE0070005B2A11 /* PaymentSuccessInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DAE58C1AEE0070005B2A11 /* PaymentSuccessInterfaceController.m */; };
+		87E61E371B182EC600BC2A26 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E61E361B182EC600BC2A26 /* HomeTableViewController.m */; };
+		87EC1D701B04ACDC006B89B7 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC1D6F1B04ACDC006B89B7 /* SettingsTableViewCell.m */; };
+		87FA24131B1719F800445979 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA24121B1719F800445979 /* icon@2x.png */; };
+		87FA24141B1719F800445979 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA24121B1719F800445979 /* icon@2x.png */; };
+		87FA24161B171A3F00445979 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA24151B171A3F00445979 /* logo.png */; };
+		87FA24171B171A3F00445979 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA24151B171A3F00445979 /* logo.png */; };
+		87FA241F1B172ECF00445979 /* icon_notification_centre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA241E1B172ECF00445979 /* icon_notification_centre@2x.png */; };
+		87FA24201B172ECF00445979 /* icon_notification_centre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA241E1B172ECF00445979 /* icon_notification_centre@2x.png */; };
+		87FA24231B172FCC00445979 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA24211B172FCC00445979 /* app_icon.png */; };
+		87FA24241B172FCC00445979 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA24211B172FCC00445979 /* app_icon.png */; };
+		87FA24251B172FCC00445979 /* app_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA24221B172FCC00445979 /* app_icon@2x.png */; };
+		87FA24261B172FCC00445979 /* app_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FA24221B172FCC00445979 /* app_icon@2x.png */; };
+		87FA24271B1732EC00445979 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8710AE6D1AE79C8600756B67 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8710AE771AE79C8600756B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8710AE551AE79C8600756B67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8710AE5C1AE79C8600756B67;
+			remoteInfo = BillPay;
+		};
+		8710AE9E1AE7A16300756B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8710AE551AE79C8600756B67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8710AE9B1AE7A16300756B67;
+			remoteInfo = "BillPay WatchKit App";
+		};
+		8710AEA81AE7A16300756B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8710AE551AE79C8600756B67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8710AE8C1AE7A16300756B67;
+			remoteInfo = "BillPay WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8710AEB11AE7A16300756B67 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8710AEAA1AE7A16300756B67 /* BillPay WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		619C42DAE5028EA3969D390D /* libPods-BillPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BillPay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8710AE5D1AE79C8600756B67 /* BillPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8710AE611AE79C8600756B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8710AE621AE79C8600756B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8710AE641AE79C8600756B67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8710AE651AE79C8600756B67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8710AE671AE79C8600756B67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8710AE681AE79C8600756B67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8710AE6B1AE79C8600756B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8710AE6D1AE79C8600756B67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8710AE701AE79C8600756B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8710AE761AE79C8600756B67 /* BillPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8710AE7B1AE79C8600756B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8710AE7C1AE79C8600756B67 /* BillPayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillPayTests.m; sourceTree = "<group>"; };
+		8710AE8D1AE7A16300756B67 /* BillPay WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BillPay WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8710AE901AE7A16300756B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8710AE911AE7A16300756B67 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8710AE921AE7A16300756B67 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		8710AE931AE7A16300756B67 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		8710AE951AE7A16300756B67 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		8710AE961AE7A16300756B67 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		8710AE981AE7A16300756B67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8710AE9C1AE7A16300756B67 /* BillPay WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BillPay WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8710AEA21AE7A16300756B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8710AEA41AE7A16300756B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8710AEA61AE7A16300756B67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		873139721B03474100BC9E1A /* AccountSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSummaryViewController.h; sourceTree = "<group>"; };
+		873139731B03474100BC9E1A /* AccountSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSummaryViewController.m; sourceTree = "<group>"; };
+		873139751B034CF200BC9E1A /* AccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewCell.h; sourceTree = "<group>"; };
+		873139761B034CF200BC9E1A /* AccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableViewCell.m; sourceTree = "<group>"; };
+		873139781B034EC100BC9E1A /* AccountItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountItem.h; sourceTree = "<group>"; };
+		873139791B034EC100BC9E1A /* AccountItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountItem.m; sourceTree = "<group>"; };
+		8731397C1B034ED600BC9E1A /* ServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceItem.h; sourceTree = "<group>"; };
+		8731397D1B034ED600BC9E1A /* ServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceItem.m; sourceTree = "<group>"; };
+		873139881B0355C600BC9E1A /* TransactionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionItem.h; sourceTree = "<group>"; };
+		873139891B0355C600BC9E1A /* TransactionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionItem.m; sourceTree = "<group>"; };
+		8731398C1B0362D100BC9E1A /* PayBillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayBillsViewController.h; sourceTree = "<group>"; };
+		8731398D1B0362D100BC9E1A /* PayBillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayBillsViewController.m; sourceTree = "<group>"; };
+		873139901B0363F800BC9E1A /* BillItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillItemTableViewCell.h; sourceTree = "<group>"; };
+		873139911B0363F800BC9E1A /* BillItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillItemTableViewCell.m; sourceTree = "<group>"; };
+		873139941B03683600BC9E1A /* airtel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = airtel.png; path = BillPay/airtel.png; sourceTree = SOURCE_ROOT; };
+		873139951B03683600BC9E1A /* American_Express.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = American_Express.png; path = BillPay/American_Express.png; sourceTree = SOURCE_ROOT; };
+		873139961B03683600BC9E1A /* Indiawater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Indiawater.png; path = BillPay/Indiawater.png; sourceTree = SOURCE_ROOT; };
+		873139971B03683600BC9E1A /* msedcl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msedcl.png; path = BillPay/msedcl.png; sourceTree = SOURCE_ROOT; };
+		8735F6CA1B0DF85000539790 /* TransactionHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionHistoryTableViewController.h; sourceTree = "<group>"; };
+		8735F6CB1B0DF85000539790 /* TransactionHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionHistoryTableViewController.m; sourceTree = "<group>"; };
+		8735F6CC1B0DF85000539790 /* TransactionItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionItemTableViewCell.h; sourceTree = "<group>"; };
+		8735F6CD1B0DF85000539790 /* TransactionItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionItemTableViewCell.m; sourceTree = "<group>"; };
+		8735F6D01B0DF86900539790 /* LowBalanceAlertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowBalanceAlertTableViewController.h; sourceTree = "<group>"; };
+		8735F6D11B0DF86900539790 /* LowBalanceAlertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowBalanceAlertTableViewController.m; sourceTree = "<group>"; };
+		8735F6D61B0DF8D400539790 /* ItemRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemRowType.h; sourceTree = "<group>"; };
+		8735F6D71B0DF8D400539790 /* ItemRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemRowType.m; sourceTree = "<group>"; };
+		8735F6D91B0DFD3800539790 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		8735F6DA1B0DFD3800539790 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		87401B091AF7A13C00DEADBE /* PayAllBillsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayAllBillsInterfaceController.h; sourceTree = "<group>"; };
+		87401B0A1AF7A13C00DEADBE /* PayAllBillsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayAllBillsInterfaceController.m; sourceTree = "<group>"; };
+		8742F2241AE925E7003687D3 /* MainRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRowType.h; sourceTree = "<group>"; };
+		8742F2251AE925E7003687D3 /* MainRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRowType.m; sourceTree = "<group>"; };
+		874D9D2F1AED172100A9131A /* AccountSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSummaryController.h; sourceTree = "<group>"; };
+		874D9D301AED172100A9131A /* AccountSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSummaryController.m; sourceTree = "<group>"; };
+		874D9D321AED257D00A9131A /* PayBillsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayBillsController.h; sourceTree = "<group>"; };
+		874D9D331AED257D00A9131A /* PayBillsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayBillsController.m; sourceTree = "<group>"; };
+		874D9D351AED274500A9131A /* PayBillsRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayBillsRowType.h; sourceTree = "<group>"; };
+		874D9D361AED274500A9131A /* PayBillsRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayBillsRowType.m; sourceTree = "<group>"; };
+		874D9D381AED49B500A9131A /* PaymentConfirmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentConfirmController.h; sourceTree = "<group>"; };
+		874D9D391AED49B500A9131A /* PaymentConfirmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentConfirmController.m; sourceTree = "<group>"; };
+		8773D0EA1B578C3E005A7989 /* BillPay WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "BillPay WatchKit App.entitlements"; sourceTree = "<group>"; };
+		8791F1201B0F1F1200896D6D /* DebitAndCreditAlertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebitAndCreditAlertTableViewController.h; sourceTree = "<group>"; };
+		8791F1211B0F1F1200896D6D /* DebitAndCreditAlertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebitAndCreditAlertTableViewController.m; sourceTree = "<group>"; };
+		8791F1231B0F2CA200896D6D /* WeeklyAlertsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyAlertsTableViewController.h; sourceTree = "<group>"; };
+		8791F1241B0F2CA200896D6D /* WeeklyAlertsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyAlertsTableViewController.m; sourceTree = "<group>"; };
+		87A623141AF7DBFB00083148 /* GlanceInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceInterfaceController.h; sourceTree = "<group>"; };
+		87A623151AF7DBFB00083148 /* GlanceInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceInterfaceController.m; sourceTree = "<group>"; };
+		87C25E5C1AF773C400409AB2 /* BillPay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BillPay.entitlements; sourceTree = "<group>"; };
+		87C25E5D1AF774F300409AB2 /* BillPay WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "BillPay WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		87DAE58B1AEE0070005B2A11 /* PaymentSuccessInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentSuccessInterfaceController.h; sourceTree = "<group>"; };
+		87DAE58C1AEE0070005B2A11 /* PaymentSuccessInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentSuccessInterfaceController.m; sourceTree = "<group>"; };
+		87E603521B1C5F06008DB359 /* CloudantToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudantToolkit.framework; path = Pods/CloudantToolkit/Frameworks/CloudantToolkit.framework; sourceTree = "<group>"; };
+		87E61E351B182EC600BC2A26 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		87E61E361B182EC600BC2A26 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		87EC1D6E1B04ACDC006B89B7 /* SettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewCell.h; sourceTree = "<group>"; };
+		87EC1D6F1B04ACDC006B89B7 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewCell.m; sourceTree = "<group>"; };
+		87FA24121B1719F800445979 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		87FA24151B171A3F00445979 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		87FA241E1B172ECF00445979 /* icon_notification_centre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_notification_centre@2x.png"; path = "BillPay/icon_notification_centre@2x.png"; sourceTree = SOURCE_ROOT; };
+		87FA24211B172FCC00445979 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
+		87FA24221B172FCC00445979 /* app_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon@2x.png"; sourceTree = "<group>"; };
+		C4E139980BAF1F31DD19948B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8710AE5A1AE79C8600756B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8710AE731AE79C8600756B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8710AE8A1AE7A16300756B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8710AE541AE79C8600756B67 = {
+			isa = PBXGroup;
+			children = (
+				8710AE5F1AE79C8600756B67 /* BillPay */,
+				8710AE791AE79C8600756B67 /* BillPayTests */,
+				8710AE8E1AE7A16300756B67 /* BillPay WatchKit Extension */,
+				8710AEA01AE7A16300756B67 /* BillPay WatchKit App */,
+				8710AE5E1AE79C8600756B67 /* Products */,
+				D2FAA60FDF83FFAF035FE837 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8710AE5E1AE79C8600756B67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8710AE5D1AE79C8600756B67 /* BillPay.app */,
+				8710AE761AE79C8600756B67 /* BillPayTests.xctest */,
+				8710AE8D1AE7A16300756B67 /* BillPay WatchKit Extension.appex */,
+				8710AE9C1AE7A16300756B67 /* BillPay WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8710AE5F1AE79C8600756B67 /* BillPay */ = {
+			isa = PBXGroup;
+			children = (
+				87C25E5C1AF773C400409AB2 /* BillPay.entitlements */,
+				873139781B034EC100BC9E1A /* AccountItem.h */,
+				873139791B034EC100BC9E1A /* AccountItem.m */,
+				8731397C1B034ED600BC9E1A /* ServiceItem.h */,
+				8731397D1B034ED600BC9E1A /* ServiceItem.m */,
+				873139881B0355C600BC9E1A /* TransactionItem.h */,
+				873139891B0355C600BC9E1A /* TransactionItem.m */,
+				8710AE641AE79C8600756B67 /* AppDelegate.h */,
+				8710AE651AE79C8600756B67 /* AppDelegate.m */,
+				8710AE671AE79C8600756B67 /* ViewController.h */,
+				8710AE681AE79C8600756B67 /* ViewController.m */,
+				87E61E351B182EC600BC2A26 /* HomeTableViewController.h */,
+				87E61E361B182EC600BC2A26 /* HomeTableViewController.m */,
+				873139751B034CF200BC9E1A /* AccountTableViewCell.h */,
+				873139761B034CF200BC9E1A /* AccountTableViewCell.m */,
+				873139721B03474100BC9E1A /* AccountSummaryViewController.h */,
+				873139731B03474100BC9E1A /* AccountSummaryViewController.m */,
+				873139901B0363F800BC9E1A /* BillItemTableViewCell.h */,
+				873139911B0363F800BC9E1A /* BillItemTableViewCell.m */,
+				8731398C1B0362D100BC9E1A /* PayBillsViewController.h */,
+				8731398D1B0362D100BC9E1A /* PayBillsViewController.m */,
+				8735F6D01B0DF86900539790 /* LowBalanceAlertTableViewController.h */,
+				8735F6D11B0DF86900539790 /* LowBalanceAlertTableViewController.m */,
+				8791F1201B0F1F1200896D6D /* DebitAndCreditAlertTableViewController.h */,
+				8791F1211B0F1F1200896D6D /* DebitAndCreditAlertTableViewController.m */,
+				8791F1231B0F2CA200896D6D /* WeeklyAlertsTableViewController.h */,
+				8791F1241B0F2CA200896D6D /* WeeklyAlertsTableViewController.m */,
+				87EC1D6E1B04ACDC006B89B7 /* SettingsTableViewCell.h */,
+				87EC1D6F1B04ACDC006B89B7 /* SettingsTableViewCell.m */,
+				8735F6D91B0DFD3800539790 /* SettingsTableViewController.h */,
+				8735F6DA1B0DFD3800539790 /* SettingsTableViewController.m */,
+				8735F6CC1B0DF85000539790 /* TransactionItemTableViewCell.h */,
+				8735F6CD1B0DF85000539790 /* TransactionItemTableViewCell.m */,
+				8735F6CA1B0DF85000539790 /* TransactionHistoryTableViewController.h */,
+				8735F6CB1B0DF85000539790 /* TransactionHistoryTableViewController.m */,
+				8710AE6A1AE79C8600756B67 /* Main.storyboard */,
+				87FA24211B172FCC00445979 /* app_icon.png */,
+				87FA24221B172FCC00445979 /* app_icon@2x.png */,
+				87FA24151B171A3F00445979 /* logo.png */,
+				87FA24121B1719F800445979 /* icon@2x.png */,
+				8710AE6D1AE79C8600756B67 /* Images.xcassets */,
+				8710AE6F1AE79C8600756B67 /* LaunchScreen.xib */,
+				8710AE601AE79C8600756B67 /* Supporting Files */,
+			);
+			path = BillPay;
+			sourceTree = "<group>";
+		};
+		8710AE601AE79C8600756B67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8710AE611AE79C8600756B67 /* Info.plist */,
+				8710AE621AE79C8600756B67 /* main.m */,
+				873139941B03683600BC9E1A /* airtel.png */,
+				873139951B03683600BC9E1A /* American_Express.png */,
+				873139961B03683600BC9E1A /* Indiawater.png */,
+				873139971B03683600BC9E1A /* msedcl.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8710AE791AE79C8600756B67 /* BillPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				8710AE7C1AE79C8600756B67 /* BillPayTests.m */,
+				8710AE7A1AE79C8600756B67 /* Supporting Files */,
+			);
+			path = BillPayTests;
+			sourceTree = "<group>";
+		};
+		8710AE7A1AE79C8600756B67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8710AE7B1AE79C8600756B67 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8710AE8E1AE7A16300756B67 /* BillPay WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				87C25E5D1AF774F300409AB2 /* BillPay WatchKit Extension.entitlements */,
+				8742F2241AE925E7003687D3 /* MainRowType.h */,
+				8742F2251AE925E7003687D3 /* MainRowType.m */,
+				8710AE921AE7A16300756B67 /* InterfaceController.h */,
+				8710AE931AE7A16300756B67 /* InterfaceController.m */,
+				8710AE951AE7A16300756B67 /* NotificationController.h */,
+				8710AE961AE7A16300756B67 /* NotificationController.m */,
+				874D9D2F1AED172100A9131A /* AccountSummaryController.h */,
+				874D9D301AED172100A9131A /* AccountSummaryController.m */,
+				8735F6D61B0DF8D400539790 /* ItemRowType.h */,
+				8735F6D71B0DF8D400539790 /* ItemRowType.m */,
+				874D9D321AED257D00A9131A /* PayBillsController.h */,
+				874D9D331AED257D00A9131A /* PayBillsController.m */,
+				874D9D351AED274500A9131A /* PayBillsRowType.h */,
+				874D9D361AED274500A9131A /* PayBillsRowType.m */,
+				874D9D381AED49B500A9131A /* PaymentConfirmController.h */,
+				874D9D391AED49B500A9131A /* PaymentConfirmController.m */,
+				87DAE58B1AEE0070005B2A11 /* PaymentSuccessInterfaceController.h */,
+				87DAE58C1AEE0070005B2A11 /* PaymentSuccessInterfaceController.m */,
+				87401B091AF7A13C00DEADBE /* PayAllBillsInterfaceController.h */,
+				87401B0A1AF7A13C00DEADBE /* PayAllBillsInterfaceController.m */,
+				87A623141AF7DBFB00083148 /* GlanceInterfaceController.h */,
+				87A623151AF7DBFB00083148 /* GlanceInterfaceController.m */,
+				8710AE981AE7A16300756B67 /* Images.xcassets */,
+				8710AE8F1AE7A16300756B67 /* Supporting Files */,
+			);
+			path = "BillPay WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8710AE8F1AE7A16300756B67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8710AE901AE7A16300756B67 /* Info.plist */,
+				8710AE911AE7A16300756B67 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8710AEA01AE7A16300756B67 /* BillPay WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8773D0EA1B578C3E005A7989 /* BillPay WatchKit App.entitlements */,
+				8710AEA31AE7A16300756B67 /* Interface.storyboard */,
+				87FA241E1B172ECF00445979 /* icon_notification_centre@2x.png */,
+				8710AEA61AE7A16300756B67 /* Images.xcassets */,
+				8710AEA11AE7A16300756B67 /* Supporting Files */,
+			);
+			path = "BillPay WatchKit App";
+			sourceTree = "<group>";
+		};
+		8710AEA11AE7A16300756B67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8710AEA21AE7A16300756B67 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2FAA60FDF83FFAF035FE837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87E603521B1C5F06008DB359 /* CloudantToolkit.framework */,
+				619C42DAE5028EA3969D390D /* libPods-BillPay.a */,
+				C4E139980BAF1F31DD19948B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8710AE5C1AE79C8600756B67 /* BillPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8710AE801AE79C8600756B67 /* Build configuration list for PBXNativeTarget "BillPay" */;
+			buildPhases = (
+				8710AE591AE79C8600756B67 /* Sources */,
+				8710AE5A1AE79C8600756B67 /* Frameworks */,
+				8710AE5B1AE79C8600756B67 /* Resources */,
+				8710AEB11AE7A16300756B67 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8710AEA91AE7A16300756B67 /* PBXTargetDependency */,
+			);
+			name = BillPay;
+			productName = BillPay;
+			productReference = 8710AE5D1AE79C8600756B67 /* BillPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8710AE751AE79C8600756B67 /* BillPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8710AE831AE79C8600756B67 /* Build configuration list for PBXNativeTarget "BillPayTests" */;
+			buildPhases = (
+				8710AE721AE79C8600756B67 /* Sources */,
+				8710AE731AE79C8600756B67 /* Frameworks */,
+				8710AE741AE79C8600756B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8710AE781AE79C8600756B67 /* PBXTargetDependency */,
+			);
+			name = BillPayTests;
+			productName = BillPayTests;
+			productReference = 8710AE761AE79C8600756B67 /* BillPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8710AE8C1AE7A16300756B67 /* BillPay WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8710AEAE1AE7A16300756B67 /* Build configuration list for PBXNativeTarget "BillPay WatchKit Extension" */;
+			buildPhases = (
+				8710AE891AE7A16300756B67 /* Sources */,
+				8710AE8A1AE7A16300756B67 /* Frameworks */,
+				8710AE8B1AE7A16300756B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8710AE9F1AE7A16300756B67 /* PBXTargetDependency */,
+			);
+			name = "BillPay WatchKit Extension";
+			productName = "BillPay WatchKit Extension";
+			productReference = 8710AE8D1AE7A16300756B67 /* BillPay WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		8710AE9B1AE7A16300756B67 /* BillPay WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8710AEAB1AE7A16300756B67 /* Build configuration list for PBXNativeTarget "BillPay WatchKit App" */;
+			buildPhases = (
+				8710AE9A1AE7A16300756B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BillPay WatchKit App";
+			productName = "BillPay WatchKit App";
+			productReference = 8710AE9C1AE7A16300756B67 /* BillPay WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8710AE551AE79C8600756B67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Aanchal Arora";
+				TargetAttributes = {
+					8710AE5C1AE79C8600756B67 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = PP64RT7P8Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8710AE751AE79C8600756B67 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 8710AE5C1AE79C8600756B67;
+					};
+					8710AE8C1AE7A16300756B67 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = PP64RT7P8Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8710AE9B1AE7A16300756B67 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = PP64RT7P8Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8710AE581AE79C8600756B67 /* Build configuration list for PBXProject "BillPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8710AE541AE79C8600756B67;
+			productRefGroup = 8710AE5E1AE79C8600756B67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8710AE5C1AE79C8600756B67 /* BillPay */,
+				8710AE751AE79C8600756B67 /* BillPayTests */,
+				8710AE8C1AE7A16300756B67 /* BillPay WatchKit Extension */,
+				8710AE9B1AE7A16300756B67 /* BillPay WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8710AE5B1AE79C8600756B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873139981B03683600BC9E1A /* airtel.png in Resources */,
+				87FA24251B172FCC00445979 /* app_icon@2x.png in Resources */,
+				8731399C1B03683600BC9E1A /* Indiawater.png in Resources */,
+				87FA24161B171A3F00445979 /* logo.png in Resources */,
+				87FA241F1B172ECF00445979 /* icon_notification_centre@2x.png in Resources */,
+				8731399E1B03683600BC9E1A /* msedcl.png in Resources */,
+				87FA24231B172FCC00445979 /* app_icon.png in Resources */,
+				8710AE6C1AE79C8600756B67 /* Main.storyboard in Resources */,
+				8731399A1B03683600BC9E1A /* American_Express.png in Resources */,
+				8710AE711AE79C8600756B67 /* LaunchScreen.xib in Resources */,
+				8710AE6E1AE79C8600756B67 /* Images.xcassets in Resources */,
+				87FA24131B1719F800445979 /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8710AE741AE79C8600756B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8710AE8B1AE7A16300756B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8710AE9D1AE7A16300756B67 /* BillPay WatchKit App.app in Resources */,
+				8710AE991AE7A16300756B67 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8710AE9A1AE7A16300756B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B5CCB61B15DFA90050E207 /* American_Express.png in Resources */,
+				87B5CCB71B15DFAC0050E207 /* Indiawater.png in Resources */,
+				87B5CCB51B15DFA10050E207 /* airtel.png in Resources */,
+				87B5CCB81B15DFB00050E207 /* msedcl.png in Resources */,
+				8710AEA51AE7A16300756B67 /* Interface.storyboard in Resources */,
+				87FA24171B171A3F00445979 /* logo.png in Resources */,
+				87FA24201B172ECF00445979 /* icon_notification_centre@2x.png in Resources */,
+				87FA24261B172FCC00445979 /* app_icon@2x.png in Resources */,
+				8710AEA71AE7A16300756B67 /* Images.xcassets in Resources */,
+				87FA24271B1732EC00445979 /* Images.xcassets in Resources */,
+				87FA24241B172FCC00445979 /* app_icon.png in Resources */,
+				87FA24141B1719F800445979 /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8710AE591AE79C8600756B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8710AE691AE79C8600756B67 /* ViewController.m in Sources */,
+				8731398E1B0362D100BC9E1A /* PayBillsViewController.m in Sources */,
+				873139741B03474100BC9E1A /* AccountSummaryViewController.m in Sources */,
+				8791F1221B0F1F1200896D6D /* DebitAndCreditAlertTableViewController.m in Sources */,
+				8735F6D41B0DF86900539790 /* LowBalanceAlertTableViewController.m in Sources */,
+				8710AE661AE79C8600756B67 /* AppDelegate.m in Sources */,
+				8735F6CF1B0DF85000539790 /* TransactionItemTableViewCell.m in Sources */,
+				8791F1251B0F2CA200896D6D /* WeeklyAlertsTableViewController.m in Sources */,
+				873139921B0363F800BC9E1A /* BillItemTableViewCell.m in Sources */,
+				87EC1D701B04ACDC006B89B7 /* SettingsTableViewCell.m in Sources */,
+				8731398A1B0355C600BC9E1A /* TransactionItem.m in Sources */,
+				8735F6CE1B0DF85000539790 /* TransactionHistoryTableViewController.m in Sources */,
+				8735F6DB1B0DFD3800539790 /* SettingsTableViewController.m in Sources */,
+				8731397A1B034EC100BC9E1A /* AccountItem.m in Sources */,
+				87E61E371B182EC600BC2A26 /* HomeTableViewController.m in Sources */,
+				8731397E1B034ED600BC9E1A /* ServiceItem.m in Sources */,
+				873139771B034CF200BC9E1A /* AccountTableViewCell.m in Sources */,
+				8710AE631AE79C8600756B67 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8710AE721AE79C8600756B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8710AE7D1AE79C8600756B67 /* BillPayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8710AE891AE7A16300756B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874D9D341AED257D00A9131A /* PayBillsController.m in Sources */,
+				8735F6D81B0DF8D400539790 /* ItemRowType.m in Sources */,
+				8731398B1B0355C600BC9E1A /* TransactionItem.m in Sources */,
+				873139931B0363F800BC9E1A /* BillItemTableViewCell.m in Sources */,
+				874D9D311AED172100A9131A /* AccountSummaryController.m in Sources */,
+				87DAE58D1AEE0070005B2A11 /* PaymentSuccessInterfaceController.m in Sources */,
+				874D9D3A1AED49B500A9131A /* PaymentConfirmController.m in Sources */,
+				8710AE971AE7A16300756B67 /* NotificationController.m in Sources */,
+				87A623161AF7DBFB00083148 /* GlanceInterfaceController.m in Sources */,
+				8742F2261AE925E7003687D3 /* MainRowType.m in Sources */,
+				8731397B1B034EC100BC9E1A /* AccountItem.m in Sources */,
+				874D9D371AED274500A9131A /* PayBillsRowType.m in Sources */,
+				87401B0B1AF7A13C00DEADBE /* PayAllBillsInterfaceController.m in Sources */,
+				8710AE941AE7A16300756B67 /* InterfaceController.m in Sources */,
+				87B5CCA51B15C7140050E207 /* ServiceItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8710AE781AE79C8600756B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8710AE5C1AE79C8600756B67 /* BillPay */;
+			targetProxy = 8710AE771AE79C8600756B67 /* PBXContainerItemProxy */;
+		};
+		8710AE9F1AE7A16300756B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8710AE9B1AE7A16300756B67 /* BillPay WatchKit App */;
+			targetProxy = 8710AE9E1AE7A16300756B67 /* PBXContainerItemProxy */;
+		};
+		8710AEA91AE7A16300756B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8710AE8C1AE7A16300756B67 /* BillPay WatchKit Extension */;
+			targetProxy = 8710AEA81AE7A16300756B67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8710AE6A1AE79C8600756B67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8710AE6B1AE79C8600756B67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8710AE6F1AE79C8600756B67 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8710AE701AE79C8600756B67 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		8710AEA31AE7A16300756B67 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8710AEA41AE7A16300756B67 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8710AE7E1AE79C8600756B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8710AE7F1AE79C8600756B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8710AE811AE79C8600756B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BillPay/BillPay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/CloudantToolkit/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CDTDatastore\"",
+					"\"${PODS_ROOT}/Headers/Public/CloudantQueryObjc\"",
+					"\"${PODS_ROOT}/Headers/Public/CloudantToolkit\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/IMFCore\"",
+					"\"${PODS_ROOT}/Headers/Public/IMFData\"",
+					"\"${PODS_ROOT}/Headers/Public/IMFPush\"",
+					"\"${PODS_ROOT}/Headers/Public/IMFURLProtocol\"",
+				);
+				INFOPLIST_FILE = BillPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a6e7fd82-75f2-48de-bd8a-a9381d9ae217";
+			};
+			name = Debug;
+		};
+		8710AE821AE79C8600756B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BillPay/BillPay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/CloudantToolkit/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CDTDatastore\"",
+					"\"${PODS_ROOT}/Headers/Public/CloudantQueryObjc\"",
+					"\"${PODS_ROOT}/Headers/Public/CloudantToolkit\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/IMFCore\"",
+					"\"${PODS_ROOT}/Headers/Public/IMFData\"",
+					"\"${PODS_ROOT}/Headers/Public/IMFPush\"",
+					"\"${PODS_ROOT}/Headers/Public/IMFURLProtocol\"",
+				);
+				INFOPLIST_FILE = BillPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a6e7fd82-75f2-48de-bd8a-a9381d9ae217";
+			};
+			name = Release;
+		};
+		8710AE841AE79C8600756B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BillPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillPay.app/BillPay";
+			};
+			name = Debug;
+		};
+		8710AE851AE79C8600756B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BillPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillPay.app/BillPay";
+			};
+			name = Release;
+		};
+		8710AEAC1AE7A16300756B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BillPay WatchKit App/BillPay WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = BillPay_WatchKit_Extension;
+				INFOPLIST_FILE = "BillPay WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.test1.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33e9ef20-0f87-4fd7-b355-182334a89ccc";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = 1;
+			};
+			name = Debug;
+		};
+		8710AEAD1AE7A16300756B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BillPay WatchKit App/BillPay WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				IBSC_MODULE = BillPay_WatchKit_Extension;
+				INFOPLIST_FILE = "BillPay WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.test1.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33e9ef20-0f87-4fd7-b355-182334a89ccc";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = 1;
+			};
+			name = Release;
+		};
+		8710AEAF1AE7A16300756B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "BillPay WatchKit Extension/BillPay WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BillPay WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.test1.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "44c24f4a-18a9-4514-b4a7-f92e078177de";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8710AEB01AE7A16300756B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "BillPay WatchKit Extension/BillPay WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sanjay bhanagade (Z6SY2SWRQ6)";
+				INFOPLIST_FILE = "BillPay WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.test1.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "44c24f4a-18a9-4514-b4a7-f92e078177de";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8710AE581AE79C8600756B67 /* Build configuration list for PBXProject "BillPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8710AE7E1AE79C8600756B67 /* Debug */,
+				8710AE7F1AE79C8600756B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8710AE801AE79C8600756B67 /* Build configuration list for PBXNativeTarget "BillPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8710AE811AE79C8600756B67 /* Debug */,
+				8710AE821AE79C8600756B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8710AE831AE79C8600756B67 /* Build configuration list for PBXNativeTarget "BillPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8710AE841AE79C8600756B67 /* Debug */,
+				8710AE851AE79C8600756B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8710AEAB1AE7A16300756B67 /* Build configuration list for PBXNativeTarget "BillPay WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8710AEAC1AE7A16300756B67 /* Debug */,
+				8710AEAD1AE7A16300756B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8710AEAE1AE7A16300756B67 /* Build configuration list for PBXNativeTarget "BillPay WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8710AEAF1AE7A16300756B67 /* Debug */,
+				8710AEB01AE7A16300756B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8710AE551AE79C8600756B67 /* Project object */;
+}
